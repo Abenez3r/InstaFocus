@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "InstaFocus",
+  "version": "1.0",
+  "description": "Stay focused on your Direct Messages on Instagram.",
+  "permissions": ["webNavigation", "tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "host_permissions": [
+    "https://www.instagram.com/*"
+  ]
+}
